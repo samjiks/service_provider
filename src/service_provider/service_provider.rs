@@ -16,7 +16,7 @@ struct ServiceProvider {
     pub name: String,
     pub description: String,
     pub keywords: Vec<String>,
-    pub contact_no: Int,
+    pub contact_no: String,
     pub email: String
 }
 
@@ -37,7 +37,7 @@ fn get_self() -> ServiceProvider {
 }
 
 #[query]
-fn get(name: String) -> Profile {
+fn get(name: String) -> ServiceProvider {
     let id_store = storage::get::<IdStore>();
     let service_provider_store = storage::get::<ServiceProviderStore>();
 
