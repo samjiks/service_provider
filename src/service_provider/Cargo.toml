@@ -1,0 +1,13 @@
+[package]
+name = "service_provider"
+version = "0.1.0"
+authors = ["Samuel Thampy <samjiks2005@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "main.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+ic-cdk = { path = "../../../../../cdk-rs/src/ic-cdk", version = "0.2.4" }
+ic-cdk-macros = { path = "../../../../../cdk-rs/src/ic-cdk-macros", version = "0.2.4" }
