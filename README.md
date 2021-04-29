@@ -1,4 +1,4 @@
-# service_provider
+## service_provider
 
 Welcome to your new service_provider project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
@@ -12,6 +12,10 @@ To learn more before you start working with service_provider, see the following 
 - [Motoko Language Quick Reference](https://sdk.dfinity.org/docs/language-guide/language-manual.html)
 
 If you want to start working on your project right away, you might want to try the following commands:
+
+## Additional Dependencies
+## Make sure you have cargo in the path 
+### rustup target add wasm32-unknown-unknown
 
 ```bash
 cd service_provider/

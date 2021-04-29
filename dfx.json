@@ -1,21 +1,10 @@
 {
   "canisters": {
     "service_provider": {
-      "main": "src/service_provider/main.mo",
-      "type": "motoko"
-    },
-    "service_provider_assets": {
-      "dependencies": [
-        "service_provider"
-      ],
-      "frontend": {
-        "entrypoint": "src/service_provider_assets/public/index.js"
-      },
-      "source": [
-        "src/service_provider_assets/assets",
-        "dist/service_provider_assets/"
-      ],
-      "type": "assets"
+      "build": "cargo build --target wasm32-unknown-unknown --package service_provider --release",
+      "candid": "src/service_provider/service_provider.did",
+      "wasm": "target/wasm32-unknown-unknown/debug/service_provider.wasm",
+      "type": "custom"
     }
   },
   "defaults": {
@@ -28,6 +17,12 @@
     "local": {
       "bind": "127.0.0.1:8000",
       "type": "ephemeral"
+    },
+    "ic": {
+      "providers": [
+        "https://gw.dfinity.network"
+      ],
+      "type": "persistent"
     }
   },
   "version": 1
