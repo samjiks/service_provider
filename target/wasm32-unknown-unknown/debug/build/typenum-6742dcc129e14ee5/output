@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/samuelthampy/work/cry4help/service_provider/target/wasm32-unknown-unknown/debug/build/typenum-6742dcc129e14ee5/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/samuelthampy/work/cry4help/service_provider/target/wasm32-unknown-unknown/debug/build/typenum-6742dcc129e14ee5/out/op.rs
