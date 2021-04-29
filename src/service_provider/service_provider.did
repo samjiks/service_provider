@@ -1,3 +1,19 @@
 service : {
     "print": () -> () query;
 }
+
+type Service_Provider_2 = record {
+    "name": text;
+    "description": text;
+    "keywords": vec text;
+    "contact_no": int,
+    "email": text
+};
+type Service_Provider = Service_Provider_2;
+
+service : {
+    "getSelf": () -> (Service_Provider_2) query;
+    "get": (text) -> (Service_Provider_2) query;
+    "update": (Service_Provider_2) -> ();
+    "search": (text) -> (opt Service_Provider_2) query;
+}

@@ -5,7 +5,7 @@ authors = ["Samuel Thampy <samjiks2005@gmail.com>"]
 edition = "2018"
 
 [lib]
-path = "main.rs"
+path = "service_provider.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
